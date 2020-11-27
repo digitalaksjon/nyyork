@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-
 import { LayoutWrapper } from './styles/LayoutWrapper';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -10,7 +10,7 @@ import OverlayMenu from './OverlayMenu';
 
 import nyYorkColors from './constants/colors';
 
-import 'bootstrap/dist/css/bootstrap-grid.css';
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 const Layout = ({children}) => {
 

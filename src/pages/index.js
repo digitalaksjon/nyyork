@@ -1,10 +1,8 @@
 import React from 'react';
-import SEO from '../components/seo';
+
 
 import { useStaticQuery, graphql } from 'gatsby';
 
-import '../components/styles/styles.scss';
-import nyYorkColors from '../components/constants/colors';
 import { SectionWrapper } from '../components/common/SectionWrapper';
 
 /* Import custom components */
@@ -20,7 +18,10 @@ import InstagramGrid from '../components/common/InstagramGrid';
 import FeatureAlternate from '../components/common/FeatureAlternate';
 
 
+import SEO from '../components/seo';
 
+import '../components/styles/styles.scss';
+import nyYorkColors from '../components/constants/colors';
 
 const IndexPage = () => {
   const data = useStaticQuery(myQuery);
