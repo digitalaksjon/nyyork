@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import '../components/styles/styles.scss';
 import nyYorkColors from '../components/constants/colors';
+import { SectionWrapper } from '../components/common/SectionWrapper';
 
 /* Import custom components */
 
@@ -18,7 +19,6 @@ import Feature from '../components/common/Feature';
 import InstagramGrid from '../components/common/InstagramGrid';
 import FeatureAlternate from '../components/common/FeatureAlternate';
 
-import { SectionWrapper } from '../components/common/SectionWrapper';
 
 
 
