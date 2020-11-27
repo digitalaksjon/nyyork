@@ -79,7 +79,7 @@ background-color: ${nyYorkColors.gray};
                      font-size: 4rem;
                      text-transform: uppercase;
                      @media screen and (max-width: 415px) {
-                         font-size: 3rem;
+                         font-size: 2rem;
                      }
      
                  }
