@@ -46,10 +46,6 @@ return (
         <OpeningHours  color="pink" store="wear" data={generalinfo} />
         <WhoWeAre data={frontpage} />
       </SectionWrapper>
-
-
-
-
       <SectionWrapper id="frontpage04" >
         <InstagramGrid bgColor={nyYorkColors.pink} />
       </SectionWrapper>
