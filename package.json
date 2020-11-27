@@ -48,7 +48,6 @@
     "sass-extract-js": "^0.4.0",
     "sass-extract-loader": "^1.1.0",
     "simple-react-lightbox": "^2.5.3",
-    "slash": "^3.0.0",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
@@ -63,7 +62,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "slash": "^3.0.0"
   },
   "keywords": [
     "gatsby"
