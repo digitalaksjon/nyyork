@@ -1,5 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
+import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../layout';
@@ -9,7 +10,7 @@ import { PostWrapper } from './styles/PostWrapper';
 import FacebookIcon from '../../images/facebook_icon_yellow.svg';
 import MailIcon from '../../images/mail_icon_yellow.svg';
 
-import MetaTags from 'react-meta-tags';
+
 
 import {
     EmailShareButton,
@@ -22,16 +23,13 @@ const postTemplate = ({ data: { post }, location}) => {
 
     return(
         <Layout>
-           <MetaTags>
+           <Helmet>
             <title>Page 1</title>
             <meta name="description" content="Ny York Vintage" />
             <meta property="og:title" content={post.title} />
-            <meta property="og:image:alt" content={url+post.featured_media.localFile.childImageSharp.fluid.src} />
+            <meta property="og:image" content={url+post.featured_media.localFile.childImageSharp.fluid.src} />
    
-          </MetaTags>
-
-            
-            <SEO title={post.title} keywords={['ny york', 'vintage', 'wear']} object={url+post.featured_media.localFile.childImageSharp.fluid.src}  />
+          </Helmet>
 
             <div className="container">
                 <div className="row" style={{ marginBottom: '40px' }}>
