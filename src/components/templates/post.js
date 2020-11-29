@@ -59,7 +59,7 @@ const postTemplate = ({ data: { post }, location}) => {
                             <div className="heading">
                                 <div className="title">{post.title}</div>
                             </div>
-                            <div className="body" dangerouslySetInnerHTML={{ __html: url+post.featured_media.localFile.childImageSharp.fluid.src  }}>
+                            <div className="body" dangerouslySetInnerHTML={{ __html: post.content }}>
                             </div>
                         </div>
             
