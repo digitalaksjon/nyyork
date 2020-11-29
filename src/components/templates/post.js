@@ -27,7 +27,7 @@ const postTemplate = ({ data: { post }, location}) => {
             <title>Page 1</title>
             <meta name="description" content="Ny York Vintage" />
             <meta property="og:title" content={post.title} />
-            <meta property="og:image" content={'www.nyyork.no'+post.featured_media.localFile.childImageSharp.fluid.src} />
+            <meta property="og:image" content={url+post.featured_media.localFile.childImageSharp.fluid.src} />
    
           </Helmet>
 
