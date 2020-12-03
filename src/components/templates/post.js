@@ -24,7 +24,7 @@ const postTemplate = ({ data: { post }, location}) => {
     return(
         <Layout>
            <Helmet>
-            <title>Page 1</title>
+            <title>{post.title}</title>
             <meta name="description" content="Ny York Vintage" />
             <meta property="og:title" content={post.title} />
             <meta property="og:image" content={url+post.featured_media.localFile.childImageSharp.fluid.src} />

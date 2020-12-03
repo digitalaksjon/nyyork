@@ -13,7 +13,7 @@ export const OmOssTopWrapper = styled.div`
 
     div.content {
         
-        padding: 200px 40px;
+        padding: 300px 40px 100px 40px;
         @media screen and (max-width: 415px) {
             padding: 50px 0 20px 0;
         }
