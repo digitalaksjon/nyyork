@@ -2,17 +2,16 @@ module.exports = {
   siteMetadata: {
     title: `Ny York Vintage`,
     description: `Vintage Wear & Jeans.`,
-    author: `@brungoth`,
+    author: `@brungoth`
   },
   plugins: [
-    
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
@@ -26,42 +25,41 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+      }
     },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
-      },
+      }
     },
     {
-      resolve: 'gatsby-source-wordpress',
+      resolve: "gatsby-source-wordpress",
       options: {
-        includedRoutes: ["**/posts", "**/media", '**/acf'],
-        baseUrl: 'admin.nyyork.no',
-        protocol: 'http',
+        includedRoutes: ["**/posts", "**/media", "**/acf"],
+        baseUrl: "admin.nyyork.no",
+        protocol: "http",
         hostingWPCOM: false,
         useACF: true,
         searchAndReplaceContentUrls: {
-          sourceUrl: 'http://admin.nyyork.no',
-          replacementUrl: '',
-        },
-      },
+          sourceUrl: "http://admin.nyyork.no",
+          replacementUrl: ""
+        }
+      }
     },
     {
-      resolve: 'gatsby-source-instagram',
-        options: {
-          username: '1697713321'
-        },
+      resolve: "gatsby-source-instagram",
+      options: {
+        username: "1697713321"
+      }
     },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-favicon`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/favicon.png",
-  
+        logo: "./src/favicon.png"
       }
     },
     {
@@ -70,9 +68,8 @@ module.exports = {
         fonts: {
           google: [
             {
-
-              family: 'Poppins',
-              variants: ['200', '400', '500', '600', '700'],
+              family: "Poppins",
+              variants: ["200", "400", "500", "600", "700"]
               //subsets: ['latin']
               //text: 'Hello'
               //fontDisplay: 'swap',
@@ -83,18 +80,18 @@ module.exports = {
               //   woff: `Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; rv:11.0) like Gecko`,
               //   woff2: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; ServiceUI 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393`,
               // },
-            },
-          ],
-        },
+            }
+          ]
+        }
         //formats: ['woff2', 'woff'],
         //useMinify: true,
         //usePreload: true,
         //usePreconnect: false,
-      },
-    },
+      }
+    }
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+  ]
 };
