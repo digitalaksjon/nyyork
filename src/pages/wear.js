@@ -9,7 +9,6 @@ import WhoWeAre from '../components/common/WhoWeAre';
 import WhereIs from '../components/common/WhereIs';
 import Ad from '../components/common/Ad';
 import FeatureAlternate from '../components/common/FeatureAlternate';
-import InstagramGrid from '../components/common/InstagramGrid.old';
 
 import WearTop from '../components/wear/WearTop';
 

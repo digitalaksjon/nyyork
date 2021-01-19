@@ -14,7 +14,6 @@ import WhereIs from '../components/common/WhereIs';
 import WhoWeAre from '../components/common/WhoWeAre';
 import Ad from '../components/common/Ad';
 import Feature from '../components/common/Feature';
-import InstagramGrid from '../components/common/InstagramGrid.old';
 import FeatureAlternate from '../components/common/FeatureAlternate';
 
 
