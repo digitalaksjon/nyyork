@@ -2,10 +2,7 @@
 
 const path = require('path');
 const slash = require('slash');
-const sharp = require('sharp')
 
-sharp.cache(false)
-sharp.simd(false)
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -43,6 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.errors) {
     throw new Error(result.errors);
   }
+  
 
   const {
     allWordpressPost,
@@ -61,5 +59,9 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   });
 
+  const sharp = require('sharp')
+
+  sharp.cache(false)
+  sharp.simd(false)
 
 };
