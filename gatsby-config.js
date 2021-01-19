@@ -48,12 +48,7 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: "gatsby-source-instagram",
-      options: {
-        username: "1697713321"
-      }
-    },
+
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-favicon`,
     {

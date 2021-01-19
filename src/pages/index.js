@@ -14,7 +14,6 @@ import WhereIs from '../components/common/WhereIs';
 import WhoWeAre from '../components/common/WhoWeAre';
 import Ad from '../components/common/Ad';
 import Feature from '../components/common/Feature';
-import InstagramGrid from '../components/common/InstagramGrid';
 import FeatureAlternate from '../components/common/FeatureAlternate';
 
 
@@ -47,9 +46,7 @@ return (
         <OpeningHours  color="pink" store="wear" data={generalinfo} />
         <WhoWeAre data={frontpage} />
       </SectionWrapper>
-      <SectionWrapper id="frontpage04" >
-        <InstagramGrid bgColor={nyYorkColors.pink} />
-      </SectionWrapper>
+
 
       <SectionWrapper id="frontpage05">
         <FeatureAlternate bgColor={nyYorkColors.gray} color={nyYorkColors.yellow} data={frontpage} />
