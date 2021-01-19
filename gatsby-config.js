@@ -40,6 +40,7 @@ module.exports = {
         includedRoutes: ["**/posts", "**/media", "**/acf"],
         baseUrl: "admin.nyyork.no",
         protocol: "http",
+        minimizeDeprecationNotice: true,
         hostingWPCOM: false,
         useACF: true,
         searchAndReplaceContentUrls: {
@@ -48,7 +49,12 @@ module.exports = {
         }
       }
     },
-
+    {
+      resolve: "gatsby-source-instagram",
+      options: {
+        username: "1697713321"
+      }
+    },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-favicon`,
     {

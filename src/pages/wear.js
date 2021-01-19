@@ -9,7 +9,7 @@ import WhoWeAre from '../components/common/WhoWeAre';
 import WhereIs from '../components/common/WhereIs';
 import Ad from '../components/common/Ad';
 import FeatureAlternate from '../components/common/FeatureAlternate';
-
+import InstagramGrid from '../components/common/InstagramGrid';
 
 import WearTop from '../components/wear/WearTop';
 
@@ -46,6 +46,9 @@ const WearPage = () => {
                 <FeatureAlternate color={nyYorkColors.yellow} bgColor={nyYorkColors.pink} data={wear} />  
             </SectionWrapper>
 
+            <SectionWrapper id="wear05" >
+                <InstagramGrid  bgColor={nyYorkColors.pink} />
+            </SectionWrapper>
 
     </Layout>   
     );
